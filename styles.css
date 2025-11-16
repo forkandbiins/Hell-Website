@@ -1,0 +1,69 @@
+body {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 15%;
+}
+
+h1 {
+  font-family: "MS PGothic", "Osaka", "Noto Sans JP", sans-serif;
+  font-size: 50px;
+  letter-spacing: 20px;
+  font-weight: 5;
+}
+
+input {
+  outline-style: ridge;
+  text-align: Center;
+  font-size: 17px;
+  padding: 10px;
+  width: 300px;
+  height: 15px;
+  margin-top: 2%;
+}
+
+input:focus {
+  outline: ridge;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 3px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+button:hover {
+  background-color: rgb(207, 207, 207);
+  color: rgb(0, 0, 0);
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#preloader img {
+  width: 170px;
+  height: auto;
+}
+
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
